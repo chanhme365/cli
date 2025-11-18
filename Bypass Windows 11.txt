@@ -1,0 +1,29 @@
+# BypassNRO trên Windows 11 (Cập nhật mới nhất)
+
+Lệnh `start ms-cxh:localonly` đã bị gỡ bỏ trong bản cập nhật **Windows 11 Beta mới nhất**, nhưng **BypassNRO** vẫn hoạt động bình thường.
+
+## 🔧 Hướng dẫn thực hiện
+
+### **Bước 1:** Ngắt kết nối khỏi Internet
+
+Ngắt kết nối Wi-Fi hoặc rút dây LAN trước khi bắt đầu.
+
+### **Bước 2:** Nhấn tổ hợp **Shift + F10**
+
+Mở Command Prompt tại màn hình OOBE.
+
+---
+
+### **Thêm khóa registry BypassNRO**
+
+```cmd
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+
+
+
+
+### **Thêm tiếp**
+```cmd
+shutdown /r /t 0
+
+> Theo: https://x.com/thebobpony/status/1975556222054244394?s=46

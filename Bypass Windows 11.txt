@@ -27,3 +27,21 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_
 shutdown /r /t 0
 
 > Theo: https://x.com/thebobpony/status/1975556222054244394?s=46
+
+
+
+-----------------------------------------------------
+
+### **Hoặc nếu còn sử dụng được thì**
+
+### **1. Nhấn Shift + F10 để mở Command Prompt.**
+
+
+### **2. Nhập lệnh bên dưới và nhấn Enter.**
+
+```cmd
+start ms-cxh:localonly
+
+
+Phương pháp này chỉ áp dụng cho các phiên bản Windows 11 Home và Pro.
+
